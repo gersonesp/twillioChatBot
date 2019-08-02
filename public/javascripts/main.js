@@ -35,3 +35,11 @@ function displaySlide(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+const ul = document.getElementById("icecreams");
+const url = "https://project.wnyc.org/ice-cream/data/places.json";
+
+fetch(url)
+  .then(resp => resp.json())
+  .then(data => console.log(data))
+  .catch(error => "Could not get ice cream, with error " + error);

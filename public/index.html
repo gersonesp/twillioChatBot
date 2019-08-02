@@ -21,23 +21,23 @@
         <div class="carousel-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="images/image1.jpeg" style="width:100%">
+                <img src="images/image1.jpeg">
                 <div class="text"><strong>Ahoy!</strong></div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="images/image2.jpeg" style="width:100%">
+                <img src="images/image2.jpeg">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="images/image3.jpeg" style="width:100%">
+                <img src="images/image3.jpeg">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="images/image4.jpeg" style="width:100%">
+                <img src="images/image4.jpeg">
             </div>
 
             <!-- Next and previous buttons -->
@@ -57,9 +57,21 @@
 
 
         <div class="scrollText">&#9660&#9660&#9660 Scroll down to talk to Steve &#9660&#9660&#9660</div>
+        
+        <div id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Chat</h1>
+          
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message..." name="msg" required></textarea>
+          
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div> 
     </div>
 
     <script src="javascripts/main.js"></script>
+    <script src="javascripts/twiliochat.js"></script>
 </body>
 
 </html>
